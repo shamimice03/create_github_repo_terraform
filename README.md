@@ -1,10 +1,25 @@
-# Set it as an `GITHUB_TOKEN` environment variable on your system
+## Prerequisite
+
+#### Set `GITHUB_TOKEN` as an environment variable on your system:
 ```bash
 export GITHUB_TOKEN = " <token> "
 ```
+## Usage: 
+```hcl
 
-# Run the following commands: 
+module "create_repo" {
+  source  = "shamimice03/create_repo/github"
+  version = "1.1.1"
+
+  repo_name = "github-repo-01"
+  repo_description = "Only for good things"
+  is_public = true   # visibility
+}
+```
+
+## Run the following commands: 
 ```bash
 terraform init
+terrafom plan -auto-approve
 terraform apply -auto-approve
 ```
