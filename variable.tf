@@ -1,1 +1,0 @@
-variable "GITHUB_TOKEN" {}

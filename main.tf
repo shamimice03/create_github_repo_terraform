@@ -1,10 +1,6 @@
 resource "github_repository" "github_repo" {
-  name        = "create_github_repo_terraform"
-  description = "Create e github repo using terraform"
-
-  visibility = "public"
+  name        = var.repo_name
+  description = var.repo_description
+  visibility  = var.is_public ? "public" : "private"
 }
 
-output "clone_url" {
-  value = github_repository.github_repo.http_clone_url
-}
