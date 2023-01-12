@@ -1,4 +1,4 @@
-variable "GITHUB_TOKEN" {}
+//variable "GITHUB_TOKEN" {}
 
 variable "repo_name" {
   description = "Repositoty name"
