@@ -9,7 +9,7 @@ export GITHUB_TOKEN = " <token> "
 
 module "create_repo" {
   source  = "shamimice03/create_repo/github"
-  version = "1.1.1"
+  version = "1.2.0"
 
   repo_name = "github-repo-01"
   repo_description = "Only for good things"
