@@ -17,7 +17,7 @@ module "create_repo" {
 }
 ```
 
-## Run the following commands: 
+## Commands: 
 ```bash
 terraform init
 terrafom plan -auto-approve
