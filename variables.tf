@@ -1,7 +1,5 @@
-//variable "GITHUB_TOKEN" {}
-
 variable "repo_name" {
-  description = "Repositoty name"
+  description = "Repository name"
   type        = string
   default     = null
 }

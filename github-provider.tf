@@ -6,8 +6,3 @@ terraform {
     }
   }
 }
-
-# Configure the GitHub Provider
-provider "github" {
-  #GITHUB_TOKEN
-}
